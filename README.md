@@ -54,7 +54,7 @@ https://drive.google.com/drive/folders/1sIYzKSAmOoMA9sfqzkpkF_LiN2HYKxxp?usp=sha
 Compressed DAGs with colors can be created from meshes using the tool from Dan Dolonius: https://github.com/gegoggigog/DAG-example/tree/compression
 Some additional work has been done by Phyronnaz in this fork: https://github.com/Phyronnaz/DAG_Compression
 
-The HashDAG files must be converted into our GPU SVDAG format. This can be a length process, especially when importing colors (which are converted to materials). One can cache the results for subsequent runs by setting `#define SAVE_SCENE 1` in `src/configuration/script_definitions.h` (see below). This will output the cache file to the `data` folder. To actually view the generated cache file, run the code again with `#define SAVE_SCENE 0`.
+The HashDAG files must be converted into our GPU SVDAG format. This can be a lengthy process, especially when importing colors (which are converted to materials). One can cache the results for subsequent runs by setting `#define SAVE_SCENE 1` in `src/configuration/script_definitions.h` (see below). This will output the cache file to the `data` folder. To actually view the generated cache file, run the code again with `#define SAVE_SCENE 0`.
 
 ### Memory Allocator
 We found that CUDA malloc causes some slow-downs compared to using a custom memory allocator. We use [Vulkan Memory Allocator](https://gpuopen.com/vulkan-memory-allocator/) to perform sub-allocations from a single large `cudaMalloc` allocation performed at start-up.  Vulkan Memory Allocator is enabled by default, but can be disabled with the following CMake option: `-DENABLE_VULKAN_MEMORY_ALLOCATOR=0`.
