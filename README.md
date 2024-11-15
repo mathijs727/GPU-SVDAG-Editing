@@ -1,6 +1,6 @@
 # Editing Compact Voxel Representations on the GPU
-This project contains the source code for our paper "Editing Compact Voxel Representations on the GPU" which will be presented at Pacific Graphs 2024.
-We extend [the HashDAG framework by V. Carreil, M. Billeter and E.Eisemann](https://github.com/Phyronnaz/HashDAG) by adding a GPU based editing back-end.
+This project contains the source code for our paper [Editing Compact Voxel Representations on the GPU](https://publications.graphics.tudelft.nl/papers/13) which was presented at [Pacific Graphs 2024](https://pg2024.hsu.edu.cn/#/program).
+We extend the [HashDAG framework](https://github.com/Phyronnaz/HashDAG) (V. Carreil, M. Billeter and E.Eisemann) by adding a GPU based editing back-end.
 This allows large edit operations to be performed at real-time frame rates.
 
 <center><img src="images/citadel_copy.png" width="50%" title="Screenshot" /></center>
