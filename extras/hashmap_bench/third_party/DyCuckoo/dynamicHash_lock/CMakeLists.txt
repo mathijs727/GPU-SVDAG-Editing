@@ -1,0 +1,4 @@
+add_library(DyCuckooLock INTERFACE)
+target_link_libraries(DyCuckooLock INTERFACE Cnmem CudaSamples)
+target_include_directories(DyCuckooLock INTERFACE "include")
+target_compile_features(DyCuckooLock INTERFACE cxx_std_14 cuda_std_14)

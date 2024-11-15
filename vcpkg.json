@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "dependencies": [
+    "catch2",
+    "cli11",
+    "date",
+    "eastl",
+    "freeimage",
+    "glew",
+    "glm",
+    "glfw3",
+    "eigen3",
+    "fmt",
+    "magic-enum",
+    "nativefiledialog",
+    "nlohmann-json",
+    "spdlog",
+    "tbb",
+    {
+      "name": "imgui",
+      "features": [ "opengl3-binding", "glfw-binding" ]
+    },
+    "gsl-lite",
+    {
+      "name": "d3d12-memory-allocator",
+      "platform": "windows"
+    },
+    "vulkan-memory-allocator",
+    "tracy"
+  ]
+}

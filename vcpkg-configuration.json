@@ -1,0 +1,14 @@
+{
+  "default-registry": {
+    "kind": "builtin",
+    "baseline": "2024.04.26"
+  },
+  "registries": [
+    {
+      "kind": "filesystem",
+      "path": "vcpkg-registry",
+      "baseline": "default",
+      "packages": [ "tracy" ]
+    }
+  ]
+}
