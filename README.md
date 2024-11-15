@@ -3,7 +3,7 @@ This project contains the source code for our paper [Editing Compact Voxel Repre
 We extend the [HashDAG framework](https://github.com/Phyronnaz/HashDAG) (V. Carreil, M. Billeter and E.Eisemann) by adding a GPU based editing back-end.
 This allows large edit operations to be performed at real-time frame rates.
 
-<center><img src="images/citadel_copy.png" width="50%" title="Screenshot" /></center>
+<center><img src="images/citadel_copy.png" title="Screenshot" /></center>
 
 ## Building
 You will need to install the latest CUDA release as well as the [vcpkg package manager](https://vcpkg.io/en/getting-started.html).
